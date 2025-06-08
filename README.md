@@ -38,7 +38,7 @@ Para entornos con millones de registros:
 
 ---
 
-### EJERCICIO 2: API REST en .NET 6
+### EJERCICIO 2: API REST en .NET 8
 
 **Objetivo**: Crear una API REST que reciba facturas, las valide y almacene temporalmente en memoria. Permitir su consulta por cliente ordenada por fecha.
 
