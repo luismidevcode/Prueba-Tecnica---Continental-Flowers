@@ -56,6 +56,10 @@ Para entornos con millones de registros:
 - `Services/InvoiceService.cs`
 - `Mapping/MappingProfile.cs`
 
+#### Prueba y Documentacion en Swagger
+
+- Docuemnto pdf incluido en  `Swagger UI InvoiceAPI.pdf`
+
 #### Cómo ejecutar:
 ```bash
 dotnet restore
