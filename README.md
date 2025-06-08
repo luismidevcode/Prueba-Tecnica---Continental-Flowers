@@ -1,4 +1,4 @@
-![LogoContinental](https://www.continentalflowers.com/images/logo.png)
+![LogoContinental](https://www.flowertrendsforecast.com/templates/yootheme/cache/b6/ContinentalFlowers_300x223-b6bb14fe.png)
 # Prueba-Tecnica-Continental-Flowers
 ---
 ## PARTE 1 - TEÓRICA 
