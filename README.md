@@ -43,7 +43,7 @@ Para entornos con millones de registros:
 **Objetivo**: Crear una API REST que reciba facturas, las valide y almacene temporalmente en memoria. Permitir su consulta por cliente ordenada por fecha.
 
 #### Tecnologías usadas:
-- .NET 6
+- .NET 8
 - AutoMapper
 - DTOs para entrada y salida
 - Almacenamiento simulado en memoria con lista estática (`List<Invoice>`)
