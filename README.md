@@ -1,3 +1,4 @@
+![LogoContinental](https://www.continentalflowers.com/images/logo.png)
 # Prueba-Tecnica-Continental-Flowers
 ---
 ## PARTE 1 - TEÓRICA 
