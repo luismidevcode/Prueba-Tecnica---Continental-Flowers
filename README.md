@@ -146,8 +146,14 @@ Ejecutar scripts/CreateDBDW.sql en SQL Server
 # Paso 3: Configurar el parámetro RutaArchivoParam con la ruta del archivo DailyOrders.csv
 
 # Paso 4: Ejecutar el paquete SSIS
+```
+### EXTRA – Pregunta Abierta  
 
+Definir y seguir guías de estilo y convenciones de codificación es fundamental, especialmente en proyectos desarrollados por múltiples personas. Esto garantiza un código uniforme y fácil de mantener, independientemente de quién lo escriba. Asimismo, las revisiones de código en equipo son una excelente práctica, ya que contar con otro punto de vista permite detectar mejoras y aumentar la calidad del código.
 
+Desde mi experiencia, la implementación de la metodología SCRUM ha mejorado significativamente mi productividad. Las reuniones diarias cortas han resultado clave para resolver dudas rápidamente, coordinar esfuerzos y agilizar el desarrollo del proyecto. Esto fomenta una mejor colaboración y permite que el equipo avance de manera más eficiente.
+
+Para evitar errores en producción, es imprescindible contar con un entorno de pruebas donde se puedan validar los cambios antes de ser liberados. Además, implementar estrategias de rollback es una excelente medida para revertir modificaciones de manera rápida en caso de que surjan problemas inesperados, minimizando el impacto en el sistema y garantizando la estabilidad del software.
 
 
 
