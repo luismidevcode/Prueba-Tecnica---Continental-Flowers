@@ -78,6 +78,48 @@ Para entornos con millones de registros:
 ```bash
 dotnet restore
 dotnet run
+```
+### EJERCICIO 3: Ejercicio Práctico de SSIS
+
+**Objetivo**: Construir un paquete SSIS que importe diariamente órdenes de venta desde un archivo `.csv`, las valide, enriquezca con datos de clientes y cargue el resultado final en una tabla de hechos (`FactSales`).
+
+#### Tecnologías usadas:
+
+- SQL Server Integration Services (SSIS)
+- SQL Server 2022
+- Archivos planos CSV como fuente externa
+- Data Flow Task
+- Componentes: Merge Join, Sort, Derived Column, OLE DB Destination
+- Uso de variables y parámetros de paquete
+
+#### Flujo del proceso:
+
+1. **Validación de carga**  
+   Se verifica que el archivo no haya sido cargado previamente (por nombre), usando la tabla `LoadedFiles`.
+
+2. **Carga a Staging**  
+   El archivo `.csv` se carga en la tabla temporal `StagingOrders`, que se trunca antes de cada nueva carga para evitar duplicados.
+
+3. **Enriquecimiento de datos**  
+   Se hace un `Merge Join` entre las órdenes y la tabla `dbo.Customers` para agregar el nombre del cliente a cada orden.
+
+4. **Carga final**  
+   Se insertan los datos enriquecidos en la tabla final `FactSales`.
+
+5. **Carga del nombre del archivo**  
+   Se carga el nombre del archivo en la tabla `LoadedFiles` para evitar recargas del mismo archivo, lo cual podría generar registros duplicados.
+
+#### Componentes clave del paquete SSIS:
+
+- `Execute SQL Task` para truncar `StagingOrders` y validar si el archivo ya fue procesado.
+- `Data Flow Task` con origen plano, transformaciones y carga a destino.
+
+- **Parámetros:**
+  - `RutaArchivoParam`: Ruta completa del archivo `.csv`
+
+- **Variables de paquete:**
+  - `RutaArchivo`: Referencia a `R
+
 
 
 
