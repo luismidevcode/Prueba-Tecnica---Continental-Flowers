@@ -94,6 +94,9 @@ dotnet run
 4. **Carga final**  
    Se insertan los datos enriquecidos en la tabla final `FactSales`.
 
+5. **Carga del nombre del archivo
+   Se carga el nombre del archivo en la tabla `LoadedFiles` para recargas del mismo archivo lo cual podría generar registros duplicados
+
 #### Componentes clave del paquete SSIS
 
 - `Execute SQL Task` para truncar `StagingOrders` y validar si el archivo ya fue procesado.
