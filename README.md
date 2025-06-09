@@ -118,7 +118,35 @@ dotnet run
   - `RutaArchivoParam`: Ruta completa del archivo `.csv`
 
 - **Variables de paquete:**
-  - `RutaArchivo`: Referencia a `R
+  - `RutaArchivo`: Referencia a `RutaArchivoParam`
+  - `ArchivoYaCargado`: Resultado de la validación
+  - `NombreArchivo`: Calcula el nombre del archivo teniendo en cuenta la ruta
+
+- Control de flujo condicional para evitar cargas duplicadas.
+
+#### Base de datos de pruebas
+
+Para facilitar la ejecución del paquete, se creó una base de datos llamada `ContinentalSalesDB`. Esta base incluye:
+
+- `Customers`: Clientes para enriquecer los datos.
+- `StagingOrders`: Tabla staging donde se carga el archivo CSV.
+- `LoadedFiles`: Tabla de control de archivos ya cargados.
+- `FactSales`: Tabla final con datos validados y enriquecidos.
+
+📄 Se adjunta el script de creación de la base de datos de prueba: `CreateDBDW.sql`
+
+#### Cómo ejecutar:
+
+```bash
+# Paso 1: Crear la base de datos y tablas
+Ejecutar scripts/CreateDBDW.sql en SQL Server
+
+# Paso 2: Abrir el proyecto SSIS en Visual Studio
+
+# Paso 3: Configurar el parámetro RutaArchivoParam con la ruta del archivo DailyOrders.csv
+
+# Paso 4: Ejecutar el paquete SSIS
+
 
 
 
